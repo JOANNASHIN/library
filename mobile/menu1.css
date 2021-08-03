@@ -1,0 +1,145 @@
+@media all and (min-width:360px) {	
+	/*section시작*/
+		.section_entire{
+			width:100%;
+			height:90%;
+			display:inline-block;
+			float:left;
+		}			
+		a:link, a:hover,a:visited, a:active{
+			color:inherit;
+			text-decoration:none;
+		}
+			.search_area_entire{
+				width:100%;
+				height:20%;
+				display:inline-block;
+				float:left;
+				position:relative;
+				text-align:center;
+			}
+				.search_area_entire form{
+					border:1px solid lightgray;
+					background-color:white;
+					width:90%;
+					height:40%;
+					display:inline-block;
+					border-radius:10px;
+					/*margin:0 auto;*/
+					position:absolute;
+					top:35%;
+					left:5%;
+				}
+					/*select 통합검색*/
+					.search_area_entire form select{
+							display:inline-block;
+		                     float:left;
+		                     width:30%;
+		                     height:100%;
+		                     border:none;
+		                     outline:none;
+		                     background-color:white;
+		                     font-size:14px;
+		                     color: gray;
+					}
+						.search_area_entire form select option{
+							border:none;
+						}
+					.search_area_entire input[type="text"]{
+						border:none;
+						outline:none;
+						background-color:white;
+						font-size:16px;
+						padding-left:3%;
+						height:100%;
+						width:47%;
+						display:inline-block;
+						float:left;
+					}
+					.search_area_entire .searchbtn{
+						width:20%;
+						height:100%;
+						display:inline-block;
+						float:left;
+						border:none;
+						outline:none;
+						text-align:center;
+						line-height:100%;
+					}
+						.search_area_entire .searchbtn img{
+							width:30%;
+							height:40%;
+							display:inline-block;
+						}
+		.booklist_entire{
+			width:100%;
+			height:auto;
+			display:inline-block;
+			float:left;
+		}	
+			.booklist_entire table{
+				width:100%;
+				height:auto;	
+				border-collapse:collapse;			
+			}
+			.booklist_entire tr	{
+				border-bottom:1.5px solid lightgray;
+			}
+			.booklist_entire th{
+				font-weight:bold;
+				text-align:center;	
+				background-color:rgba(214,214,214,0.4);
+
+			}
+			.booklist_entire table td:first-child{
+				width:10%;
+				text-align:center;
+			}
+			.booklist_entire table td:nth-child(2){
+				width:48%;
+				padding-right:5%;
+			}
+			.booklist_entire table td:nth-child(3){
+				width:20%;
+				text-align:center;
+			}
+			.booklist_entire table td:nth-child(4){
+				width:17%;
+				text-align:center;
+			}
+/*			.booklist_entire table td:nth-child(5){
+				width:13%;
+				text-align:center;
+			}
+	*/
+		.notfind_alarm{
+			width:100%;
+			text-align:center;
+			height:100px;
+			line-height:100px;
+			display:none;
+		}
+		.show_entire_btn{
+			width:100px;
+			height:40px;
+			margin-top:10px;
+			padding:0px 10px;
+			/*display:inline-block;*/
+			float:right;
+			margin-right:10px;
+			text-align:center;
+			/*border:1px solid lightgray;*/
+			line-height:40px;
+			/*color:gray;*/
+			background-color:navy;
+			color:white;
+			display:none;
+		}
+		.wrap_footer{
+			width:100%;
+			height:80px;
+			display:inline-block;
+			float:left;
+		}
+		
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+	<link rel="stylesheet" href="./header.css">
+	<link rel="stylesheet" href="./index.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<title>반응형웹 도서대여관리시스템</title>
+	<?php
+		$user_id = $_COOKIE['user_id'];
+		$user_name = $_COOKIE['user_name'];
+		//로그인하면
+			if( isset($user_id) && isset($user_name) ){
+				include "header.php";			
+			} else {
+				#include "header_login_before.php";			
+				include "header.php";		
+			}
+	?>
+</head>
+<body>
+	
+	<section class="section_entire">
+		<article class="search_area_entire">
+			<form action="menu1.php" method="get"><!--  나중에 post로 변경 -->
+				<select name="selectnum">
+					<option value="all">통합검색</option>
+					<option value="0">도서명검색</option>
+					<option value="1">책번호검색</option>
+					<option value="2">저자명검색</option>
+					<option value="3">출판사검색</option>
+				</select>
+				<input type="text" name="bookname" placeholder="도서검색">
+				<button id="searchbtn"><img src="./pic/search.png" alt="search_icon"></button>
+			</form>
+		</article>
+		<article class="menu_area_entire">
+			<ul>
+				<li class="menu1">
+					<a href="menu1.php">
+						<img src="./pic/icon1.png" alt="icon">
+						<p>도서관리</p>
+					</a>
+				</li>
+				<li class="menu2">
+					<a href="menu2.php">
+						<img src="./pic/icon2.png" alt="icon">
+						<p>대여관리</p>
+					</a>
+				</li>
+				<li class="menu3">
+					<a href="return.php">
+						<img src="./pic/icon3.png" alt="icon">
+						<p>반납관리</p>
+					</a>
+				</li>
+				<li class="menu4">
+					<a href="menu4.php">
+						<img src="./pic/icon4.png" alt="icon">
+						<p>회원관리</p>
+					</a>
+				</li>
+
+			</ul>
+		</article>
+	</section>
+	<script>
+		// var boxH = $('.menu_area_entire ul li').height();
+		// $('.menu_area_entire ul li img').css("margin-top",(boxH/8)+"px");
+		
+	</script>
+</body>
+</html>
